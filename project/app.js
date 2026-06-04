@@ -7,16 +7,18 @@
 
   /* ---- sticky header state ---- */
   var header = document.getElementById("siteHeader");
+  var mnav;
   function onScroll() {
     if (window.scrollY > 20) header.classList.add("scrolled");
     else header.classList.remove("scrolled");
+    if (mnav) mnav.style.top = Math.round(header.getBoundingClientRect().bottom) + "px";
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
   /* ---- mobile nav ---- */
   var burger = document.getElementById("burger");
-  var mnav = document.getElementById("mobileNav");
+  mnav = document.getElementById("mobileNav");
   function closeNav() {
     burger.classList.remove("open");
     mnav.classList.remove("open");
@@ -189,7 +191,7 @@
   /* ---- booking form -> whatsapp ---- */
   var form = document.getElementById("bookingForm");
   if (form) {
-    var WHATSAPP = "38765000000"; // ZAMIJENITE svojim brojem (bez +, bez razmaka)
+    var WHATSAPP = "38765380444";
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var ime = (form.ime.value || "").trim();
