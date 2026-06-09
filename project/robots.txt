@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ljuboljubic1948-blip.github.io/bsdetailing/sitemap.xml

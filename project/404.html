@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 — BS Detailing</title>
+<meta http-equiv="refresh" content="3;url=/" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/logo-shield.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  .err-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
+    padding: 40px 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .err-code {
+    font-family: var(--font-display);
+    font-size: clamp(80px, 20vw, 160px);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--gold);
+    opacity: 0.25;
+    letter-spacing: -0.04em;
+  }
+  .err-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .err-wrap h1 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .err-wrap p {
+    color: var(--gray-2);
+    max-width: 38ch;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div class="bp-grid" aria-hidden="true"></div>
+<div class="ambient" aria-hidden="true"></div>
+<div class="err-wrap">
+  <div class="err-code">404</div>
+  <span class="err-label">[ ERROR · STRANICA NIJE PRONAĐENA ]</span>
+  <h1>Pogrešan kurs.</h1>
+  <p>Ova stranica ne postoji. Vraćamo te na početnu za 3 sekunde.</p>
+  <a href="index.html" class="btn btn-gold" style="margin-top:12px"><span class="dot"></span>Idi na početnu</a>
+</div>
+</body>
+</html>
